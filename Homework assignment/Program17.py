@@ -1,6 +1,6 @@
 def factorialDigits(n):
-    result = [1]   # stores digits of factorial
-    size = 1       # number of digits
+    result = [1]
+    size = 1
 
     for x in range(2, n + 1):
         carry = 0
@@ -14,10 +14,9 @@ def factorialDigits(n):
             carry //= 10
             size += 1
 
-    return result[::-1]   # reverse to correct order
+    return result[::-1]
 
 
-# Test cases
-print(factorialDigits(5))     # [1, 2, 0]
-print(factorialDigits(10))    # [3, 6, 2, 8, 8, 0, 0]
-print(factorialDigits(1))     # [1]
+print(factorialDigits(5))
+print(factorialDigits(10))
+print(factorialDigits(1))
