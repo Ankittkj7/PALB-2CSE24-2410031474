@@ -1,7 +1,6 @@
 def plusOne(digits):
     n = len(digits)
 
-    # Start from last digit
     for i in range(n - 1, -1, -1):
         if digits[i] < 9:
             digits[i] += 1
@@ -17,3 +16,4 @@ def plusOne(digits):
 print(plusOne([1,2,3]))   # [1,2,4]
 print(plusOne([4,3,2,1])) # [4,3,2,2]
 print(plusOne([9]))       # [1,0]
+
